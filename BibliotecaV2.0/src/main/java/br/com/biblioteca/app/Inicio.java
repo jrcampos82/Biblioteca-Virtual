@@ -12,6 +12,9 @@ public class Inicio {
 	public static void main(String[] args) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
 		EntityManager em = emf.createEntityManager();
+		
+		// comentários .......
+		
 
 	}
 
