@@ -7,9 +7,10 @@ import javax.persistence.Persistence;
 public class DAO {
 	
 	private EntityManager em = null;
+	final EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
 	
 	public DAO() {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
+		
 		if(em == null) {
 			em = emf.createEntityManager();
 		}
